@@ -1,0 +1,200 @@
+/*footer start */
+footer{
+    .copyr{
+        margin-top: 40px;
+        background: #D8E6FA;
+        @media screen and (max-width: 768px ) {
+            margin-top: 15px;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 0;
+            font-family: 'Lato-Regular';
+            font-size: 16px;
+            line-height: 26px;
+            color: #08193B;
+            padding: 6px 0;
+        }
+    }
+    padding-top: 40px;
+    .row-custom{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 768px ) {
+           display: block;
+        }
+    }
+    .logo-footer{
+        width: 10%;
+        @media screen and (max-width: 768px ) {
+            width: 100%;
+            margin-bottom: 30px;
+            li{
+                &:first-child{
+                    text-align: center;
+                    img{
+                        height: 30px;
+                    width: 80px;
+                    object-fit: contain;
+                    }
+                }
+            }
+            .logo_footer{
+                text-align: center;
+                img{
+                    height: 30px;
+                    width: 80px;
+                    object-fit: contain;
+                }
+            }
+         }
+    }
+    .services-footer{
+        width: 30%;
+        @media screen and (max-width: 992px ) {
+            width: 40%;
+        }
+    }
+    .technologies-footer{
+        width: 15%;
+        @media screen and (max-width: 992px ) {
+            width: 20%;
+        }
+        @media screen and (max-width: 768px ) {
+           h2{
+            border-bottom: unset!important;
+            padding-bottom: 5px!important;
+           }
+        }
+    }
+    .menu-footer{
+        width: 10%;
+        @media screen and (max-width: 992px ) {
+            width: 15%;
+        }
+        @media screen and (max-width: 768px ) {
+            width: 100%;
+            text-align: center;
+         }
+        ul{
+            padding-left: 0;
+            li{
+                margin-bottom: 12px;
+                display: flex;
+                justify-content: left;
+                @media screen and (max-width: 768px ) {
+                    justify-content: center;
+                 }
+            }
+            a{
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: .08px;
+                color: #08193B;
+                font-family: 'Lato-Regular';
+                opacity: .6;
+            }
+        }
+        li{
+            h2{
+                margin-bottom: 9px;
+              font-size: 18px;
+              line-height: 22px;
+              letter-spacing: .11px;
+              color: #5A97EA;
+              font-family: 'Lato-Bold';
+              border-bottom: 1px solid #5A97EA;
+                @media screen and (max-width: 768px ) {
+                    padding-bottom: 20px;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        background-image: url(../../src/img/drop-arrow.png) !important;
+                        width: 10px;
+                        height: 10px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        top: 8px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .services-footer, .technologies-footer{
+        ul{
+            columns: 2;
+            column-gap: 60px;
+            margin-bottom: 0;
+            a{
+                &:hover{
+                    text-decoration: unset;
+                }
+            }
+            @media screen and (max-width: 992px ) {
+                column-gap: 30px;
+            }
+            @media screen and (max-width: 768px ) {
+                columns: 1;
+                column-gap: unset;
+                margin-top: 20px;
+             }
+        }
+    }
+    .technologies-footer, .services-footer{
+        @media screen and (max-width: 768px ) {
+            width: 100%;
+            text-align: center;
+         }
+        ul{
+            padding-left: 0;
+            li{
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: .08px;
+                color: #08193B;
+                font-family: 'Lato-Regular';
+                margin-bottom: 12px;
+                opacity: .6;
+            }
+        }
+        li{
+            h2{
+              font-size: 18px;
+              line-height: 22px;
+              letter-spacing: .11px;
+              color: #5A97EA;
+              font-family: 'Lato-Bold';
+              border-bottom: 1px solid #5A97EA;
+              margin-bottom: 9px;
+                @media screen and (max-width: 768px ) {
+                    padding-bottom: 20px;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        background-image: url(../../src/img/drop-arrow.png) !important;
+                        width: 10px;
+                        height: 10px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        top: 8px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 280px) and (max-width: 767px) {
+    .add-open ul{
+      display: none;
+    }
+}
+.active-footer ul{
+    display: block;
+}
